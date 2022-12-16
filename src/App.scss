@@ -1,0 +1,141 @@
+.App {
+  text-align: center;
+  background: url("../public/hero/HZDWP10_1440x2560.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-flow: row wrap;
+  color: #282c34;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+// @media (prefers-reduced-motion: no-preference) {
+//   .App-logo {
+//     animation: App-logo-spin infinite 20s linear;
+//   }
+// }
+
+.App-header {
+  border-bottom: 2px solid #fff;
+  // background-color: #282c34;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  font-size: 1rem;
+  color: #fff;
+  width: 100%;
+  padding: 0 5%;
+  font-weight: 600;
+}
+
+.App-main {
+  height: 84vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+  font-size: 1rem;
+  color: #fff;
+  width: 100%;
+  padding: 0 5%;
+
+  #hero {
+    background-color: #282c34;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    width: 80%;
+    padding: 30px;
+    row-gap: 25px;
+  }
+
+  .hero-text {
+    border-bottom: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    text-align: left;
+    font-size: 1.7rem;
+    padding-bottom: 25px;
+  }
+
+  .call-to-action {
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    width: 100%;
+  }
+}
+
+.App-footer {
+  border-top: 2px solid #fff;
+  // background-color: #282c34;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  font-size: 1rem;
+  color: #fff;
+  width: 100%;
+  padding: 0 5%;
+  font-weight: 600;
+
+  .socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row nowrap;
+    column-gap: 10px;
+
+    .social-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 25px;
+      height: 25px;
+    }
+  }
+
+  .copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+#logo {
+  // border: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#nav-btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
