@@ -1,0 +1,27 @@
+#hero {
+  background-color: #282c34;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+  width: 80%;
+  padding: 30px;
+  row-gap: 25px;
+
+  .hero-text {
+    border-bottom: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    text-align: left;
+    font-size: 1.7rem;
+    padding-bottom: 25px;
+  }
+
+  .call-to-action {
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    width: 100%;
+  }
+}

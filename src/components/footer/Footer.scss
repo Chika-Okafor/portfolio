@@ -1,0 +1,36 @@
+.App-footer {
+  border-top: 2px solid #fff;
+  // background-color: #282c34;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  font-size: 1rem;
+  color: #fff;
+  width: 100%;
+  padding: 0 5%;
+  font-weight: 600;
+
+  .socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row nowrap;
+    column-gap: 10px;
+
+    .social-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 25px;
+      height: 25px;
+    }
+  }
+
+  .copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
