@@ -10,7 +10,9 @@ export default function Hero() {
         FRONTEND <br />
         DEVELOPMENT
       </div>
-      <button className="call-to-action">explore my work</button>
+      <button data-testid="call-to-action" className="call-to-action">
+        explore my work
+      </button>
     </div>
   );
 }
