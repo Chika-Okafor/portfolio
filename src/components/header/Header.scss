@@ -1,5 +1,5 @@
 .App-header {
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #282c34;
   // background-color: #282c34;
   height: 8vh;
   display: flex;
@@ -19,9 +19,10 @@
     justify-content: flex-start;
   }
 
-  #nav-btn {
+  .nav-btn {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    cursor: pointer;
   }
 }

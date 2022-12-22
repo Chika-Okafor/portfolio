@@ -1,6 +1,6 @@
 import "./Hero.scss";
 
-export default function Hero() {
+const Hero = () => {
   return (
     <div id="hero">
       <div className="hero-text">
@@ -15,4 +15,6 @@ export default function Hero() {
       </button>
     </div>
   );
-}
+};
+
+export default Hero;

@@ -1,20 +1,29 @@
-import { Menu } from "@mui/icons-material";
+import { Menu, Close } from "@mui/icons-material";
+import { useContext } from "react";
+
+import { MenuContext } from "../../contexts/MenuContext";
 
 import "./Header.scss";
 
-export default function Header() {
+interface IProps {
+  toggleMenu: any;
+}
+
+const Header = (props: IProps) => {
+  const { toggleMenu } = props;
+
+  const { menu, setMenu } = useContext(MenuContext);
+
   return (
     <header className="App-header">
       <span id="logo">CHIKA OKAFOR</span>
-      <Menu id="nav-btn" />
+      {menu ? (
+        <Menu className="nav-btn" onClick={toggleMenu} />
+      ) : (
+        <Close className="nav-btn" onClick={toggleMenu} />
+      )}
     </header>
   );
-}
+};
 
-{
-  /* <nav id="nav-menu">
-          <span className="nav-item">ABOUT</span>
-          <span className="nav-item">WORK</span>
-          <span className="nav-item">PORTFOLIO</span>
-        </nav> */
-}
+export default Header;
