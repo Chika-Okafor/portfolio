@@ -2,7 +2,7 @@ import { GitHub, Instagram, LinkedIn } from "@mui/icons-material";
 
 import "./Footer.scss";
 
-export default function Footer() {
+const Footer = () => {
   return (
     <footer className="App-footer">
       <span className="socials">
@@ -13,4 +13,6 @@ export default function Footer() {
       <span className="copyright">© 2022 CHIKA OKAFOR</span>
     </footer>
   );
-}
+};
+
+export default Footer;
