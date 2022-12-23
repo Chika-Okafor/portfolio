@@ -1,37 +1,39 @@
-import { Link, NavLink } from "react-router-dom";
+//DEPENDENCY IMPORTS
 import { useState } from "react";
 
+//CONTEXT IMPORTS
 import { MenuContext } from "./contexts/MenuContext";
 import { ThemeContext, Theme } from "./contexts/ThemeContext";
 
+//COMPONENT IMPORTS
 import Header from "./components/header/Header";
-import Hero from "./components/hero/Hero";
+import PageContentManager from "./pages/PageContentManager";
 import NavMenu from "./components/navMenu/NavMenu";
 import Footer from "./components/footer/Footer";
 
-import "./App.scss";
-
 const App = () => {
-  const [menu, setMenu] = useState(false);
+  //CREATE CONTEXT STATES
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [theme, setTheme] = useState(Theme.Light);
 
+  //TOGGLE SLIDING MENU STATE
   const toggleMenu = () => {
-    menu ? setMenu(false) : setMenu(true);
+    isMenuOpen ? setIsMenuOpen(false) : setIsMenuOpen(true);
   };
 
   return (
-    <div className="App">
-      <MenuContext.Provider value={{ menu, setMenu }}>
-        <ThemeContext.Provider value={{ theme, setTheme }}>
+    <MenuContext.Provider value={{ isMenuOpen, setIsMenuOpen }}>
+      <ThemeContext.Provider value={{ theme, setTheme }}>
+        <div className="app">
           <Header toggleMenu={toggleMenu} />
-          <main className="App-main">
-            <Hero />
-            <NavMenu />
+          <main className="app-main">
+            <PageContentManager />
+            <NavMenu toggleMenu={toggleMenu} />
           </main>
           <Footer />
-        </ThemeContext.Provider>
-      </MenuContext.Provider>
-    </div>
+        </div>
+      </ThemeContext.Provider>
+    </MenuContext.Provider>
   );
 };
 

@@ -1,5 +1,7 @@
+//DEPENDENCY IMPORTS
 import { GitHub, Instagram, LinkedIn } from "@mui/icons-material";
 
+//STYLE IMPORTS
 import "./Footer.scss";
 
 const Footer = () => {

@@ -6,8 +6,21 @@
   flex-flow: column nowrap;
   width: 100%;
   height: 100%;
-  padding: 30px;
+  padding: 30px 7%;
   row-gap: 25px;
   position: absolute;
   top: 0;
+
+  .nav-item {
+    text-decoration: none;
+    color: #fff;
+
+    &:hover {
+      text-decoration: overline;
+    }
+
+    &.active {
+      text-decoration: line-through;
+    }
+  }
 }
