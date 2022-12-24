@@ -24,8 +24,8 @@ const PageContentManager = () => {
 
   //SET ANIMATION VARIANTS
   const pageSlideVariants = {
-    pullIn: { opacity: 1, x: "100%", delayChildren: 5 },
-    pullOut: { opacity: 1, x: "0%", delayChildren: 5 },
+    pushOut: { opacity: 1, x: "100%", delayChildren: 5 },
+    pullIn: { opacity: 1, x: "0%", delayChildren: 5 },
   };
 
   return (
@@ -33,10 +33,10 @@ const PageContentManager = () => {
       id="pages"
       data-testid="page-content-manager"
       initial={false}
-      animate={isMenuOpen ? "pullIn" : "pullOut"}
+      animate={isMenuOpen ? "pushOut" : "pullIn"}
       // transition={{ type: "spring", damping: 10, stiffness: 100 }}
       transition={{ ease: "easeOut", duration: 0.5 }}
-      // exit={{ display: "none" }}
+      // exit={isMenuOpen ? { scaleX: "100%" } : { scaleX: 0 }}
       variants={pageSlideVariants}
       layout
     >
