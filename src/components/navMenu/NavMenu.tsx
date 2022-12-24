@@ -27,11 +27,6 @@ const NavMenu = (props: IProps) => {
     close: { opacity: 1, x: "-100%" },
   };
 
-  const menuItemsSlideVariants = {
-    open: { opacity: 1, x: "-15%" },
-    close: { opacity: 1, x: "-100%" },
-  };
-
   return (
     <motion.div
       data-testid="nav-menu"
