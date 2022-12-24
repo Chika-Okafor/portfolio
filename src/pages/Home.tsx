@@ -1,16 +1,12 @@
 //DEPENDENCY IMPORTS
-import { motion } from "framer-motion";
 import React from "react";
 
 //COMPONENT IMPORTS
-import PageCreator from "../../pages/PageCreator";
+import PageCreator from "./PageCreator";
 
-//STYLE IMPORTS
-import "./Hero.scss";
-
-const Hero = () => {
-  const heroChildren = (
-    <React.Fragment>
+const Home = () => {
+  const hero = (
+    <section className="hero-section">
       <div className="hero-text">
         FOR THE <br />
         LOVE OF <br />
@@ -20,10 +16,10 @@ const Hero = () => {
       <button data-testid="call-to-action" className="call-to-action">
         explore my work
       </button>
-    </React.Fragment>
+    </section>
   );
 
-  return <PageCreator id="hero" dataTestID="hero" children={heroChildren} />;
+  return <PageCreator id="hero" dataTestID="hero" children={hero} />;
 };
 
-export default Hero;
+export default Home;

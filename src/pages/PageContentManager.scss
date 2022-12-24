@@ -1,0 +1,85 @@
+#pages {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+  color: #fff;
+  padding: 30px 5%;
+  row-gap: 25px;
+  position: absolute;
+  top: 0;
+
+  #hero {
+    background-color: #9fa4c4;
+
+    .hero-section {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-flow: row wrap;
+      row-gap: 30px;
+      width: 80%;
+
+      .hero-text {
+        border-bottom: 2px solid #fff;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        text-align: left;
+        font-size: 1.5rem;
+        padding-bottom: 25px;
+      }
+
+      .call-to-action {
+        padding: 10px 15px;
+        font-size: 1rem;
+        width: 100%;
+      }
+    }
+  }
+
+  #about {
+    background-color: cornflowerblue;
+  }
+
+  #work {
+    background-color: #5fad56;
+  }
+
+  #portfolio {
+    background-color: #e09f3e;
+  }
+
+  #blog {
+    background-color: indigo;
+  }
+
+  #default-404 {
+    background-color: firebrick;
+  }
+
+  .page-content-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: -100;
+
+    .page-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-flow: row wrap;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

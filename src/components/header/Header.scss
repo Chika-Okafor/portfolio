@@ -1,7 +1,6 @@
-.App-header {
+.app-header {
   border-bottom: 2px solid #282c34;
-  // background-color: #282c34;
-  height: 8vh;
+  height: 8%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -11,12 +10,15 @@
   width: 100%;
   padding: 0 5%;
   font-weight: 600;
+  z-index: 10;
 
   #logo {
-    // border: 1px solid #fff;
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    font-size: 0.85rem;
+    text-decoration: none;
+    color: #fff;
   }
 
   .nav-btn {
@@ -24,5 +26,6 @@
     align-items: center;
     justify-content: flex-end;
     cursor: pointer;
+    font-size: 1.1rem;
   }
 }

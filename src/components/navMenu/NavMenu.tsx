@@ -1,29 +1,60 @@
+//DEPENDENCY IMPORTS
 import { motion } from "framer-motion";
-
 import { useContext } from "react";
+import { NavLink } from "react-router-dom";
+
+// CONTEXT IMPORTS
 import { MenuContext } from "../../contexts/MenuContext";
 
+//STYLE IMPORTS
 import "./NavMenu.scss";
 
-interface IProps {}
+//INTERFACE DEFINITIONS
+interface IProps {
+  toggleMenu: any;
+}
 
 const NavMenu = (props: IProps) => {
-  const { menu, setMenu } = useContext(MenuContext);
+  //PROPS DECONSTRUCTION
+  const { toggleMenu } = props;
 
-  const menuVariants = {
+  //SAVE CONTEXT STATE
+  const { isMenuOpen, setIsMenuOpen } = useContext(MenuContext);
+
+  //SET ANIMATION VARIANTS
+  const menuSlideVariants = {
     open: { opacity: 1, x: "0%" },
-    closed: { opacity: 1, x: "-100%" },
+    close: { opacity: 1, x: "-100%" },
   };
 
   return (
     <motion.div
+      data-testid="nav-menu"
       id="nav-menu"
-      animate={menu ? "closed" : "open"}
-      variants={menuVariants}
+      initial={false}
+      animate={isMenuOpen ? "open" : "close"}
+      variants={menuSlideVariants}
     >
-      <span className="nav-item">ABOUT</span>
-      <span className="nav-item">WORK</span>
-      <span className="nav-item">PORTFOLIO</span>
+      <NavLink
+        className="nav-item"
+        to={"/portfolio/about"}
+        onClick={toggleMenu}
+      >
+        <span>ABOUT</span>
+      </NavLink>
+      <NavLink className="nav-item" to={"/portfolio/work"} onClick={toggleMenu}>
+        <span>WORK</span>
+      </NavLink>
+      <NavLink
+        className="nav-item"
+        to={"/portfolio/portfolio"}
+        onClick={toggleMenu}
+      >
+        <span>PORTFOLIO</span>
+      </NavLink>
+      <NavLink className="nav-item" to={"/portfolio/blog"} onClick={toggleMenu}>
+        <span>BLOG</span>
+      </NavLink>
     </motion.div>
   );
 };
