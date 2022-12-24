@@ -17,7 +17,7 @@ const root = ReactDOM.createRoot(
 //RENDER APP COMPONENTS IN ROOT HTML
 root.render(
   <React.StrictMode>
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router>
       <App />
     </Router>
   </React.StrictMode>

@@ -44,10 +44,10 @@ const PageContentManager = () => {
         <Route path="/portfolio/" element={<Home />} />
         <Route path="/portfolio/home" element={<Home />} />
         <Route path="/portfolio/about" element={<About />} />
-        <Route path={`/portfolio/work`} element={<Work />} />
-        <Route path={`/portfolio/portfolio`} element={<Portfolio />} />
+        <Route path="/portfolio/work" element={<Work />} />
+        <Route path="/portfolio/portfolio" element={<Portfolio />} />
         <Route path="/portfolio/blog" element={<Blog />} />
-        <Route path="*" element={<Default404 />} />
+        <Route path="/*" element={<Default404 />} />
       </Routes>
     </motion.div>
   );
