@@ -36,6 +36,7 @@ const PageContentManager = () => {
       animate={isMenuOpen ? "pullIn" : "pullOut"}
       // transition={{ type: "spring", damping: 10, stiffness: 100 }}
       transition={{ ease: "easeOut", duration: 0.5 }}
+      // exit={{ display: "none" }}
       variants={pageSlideVariants}
       layout
     >
