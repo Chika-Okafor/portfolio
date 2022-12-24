@@ -17,7 +17,7 @@ const root = ReactDOM.createRoot(
 //RENDER APP COMPONENTS IN ROOT HTML
 root.render(
   <React.StrictMode>
-    <Router basename="/portfolio">
+    <Router basename={process.env.PUBLIC_URL}>
       <App />
     </Router>
   </React.StrictMode>
