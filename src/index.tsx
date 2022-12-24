@@ -5,6 +5,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 
 // COMPONENT IMPORTS
 import App from "./App";
+import { env } from "./utils/env";
 
 //STYLE IMPORTS
 import "./index.scss";
@@ -17,7 +18,7 @@ const root = ReactDOM.createRoot(
 //RENDER APP COMPONENTS IN ROOT HTML
 root.render(
   <React.StrictMode>
-    <Router>
+    <Router basename="/portfolio">
       <App />
     </Router>
   </React.StrictMode>
