@@ -19,7 +19,7 @@ const NavMenu = (props: IProps) => {
   const { toggleMenu } = props;
 
   //SAVE CONTEXT STATE
-  const { isMenuOpen, setIsMenuOpen } = useContext(MenuContext);
+  const { isMenuOpen } = useContext(MenuContext);
 
   //SET ANIMATION VARIANTS
   const menuSlideVariants = {
