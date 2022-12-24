@@ -1,7 +1,7 @@
 // DEPENDENCY IMPORTS
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 
 // COMPONENT IMPORTS
 import App from "./App";

@@ -8,8 +8,6 @@ import { useContext } from "react";
 import { MenuContext } from "../contexts/MenuContext";
 
 //COMPONENT IMPORTS
-import Hero from "../components/hero/Hero";
-import PageCreator from "./PageCreator";
 import About from "./About";
 import Work from "./Work";
 import Portfolio from "./Portfolio";
@@ -22,7 +20,7 @@ import Home from "./Home";
 
 const PageContentManager = () => {
   //SAVE CONTEXT STATE
-  const { isMenuOpen, setIsMenuOpen } = useContext(MenuContext);
+  const { isMenuOpen } = useContext(MenuContext);
 
   //SET ANIMATION VARIANTS
   const pageSlideVariants = {
