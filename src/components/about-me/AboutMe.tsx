@@ -1,7 +1,4 @@
-import {
-  AboutTopicsList as Topics,
-  IAboutTopics,
-} from "../../utils/AboutTopicsList";
+import { AboutTopicsList as Topics } from "../../utils/AboutTopicsList";
 
 import AboutTopic from "./AboutTopic";
 
