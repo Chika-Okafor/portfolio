@@ -1,22 +1,23 @@
+//DEPENDENCY IMPORTS
 import { motion } from "framer-motion";
 import { Routes, Route } from "react-router-dom";
 import { useContext } from "react";
-
-//DEPENDENCY IMPORTS
 
 // CONTEXT IMPORTS
 import { MenuContext } from "../contexts/MenuContext";
 
 //COMPONENT IMPORTS
-import About from "./About";
-import Work from "./Work";
-import Portfolio from "./Portfolio";
+import Bio from "./Bio";
+import Skills from "./Skills";
 import Default404 from "./404";
 import Blog from "./Blog";
 
 //STYLE IMPORTS
 import "./PageContentManager.scss";
 import Home from "./Home";
+// import Projects from "./Projects";
+import Projects from "./Projects";
+// import Projects from "./Projects";
 
 const PageContentManager = () => {
   //SAVE CONTEXT STATE
@@ -43,9 +44,9 @@ const PageContentManager = () => {
       <Routes>
         <Route path="/portfolio/" element={<Home />} />
         <Route path="/portfolio/home" element={<Home />} />
-        <Route path="/portfolio/about" element={<About />} />
-        <Route path="/portfolio/work" element={<Work />} />
-        <Route path="/portfolio/portfolio" element={<Portfolio />} />
+        <Route path="/portfolio/bio" element={<Bio />} />
+        <Route path="/portfolio/skills" element={<Skills />} />
+        <Route path="/portfolio/projects" element={<Projects />} />
         <Route path="/portfolio/blog" element={<Blog />} />
         <Route path="/*" element={<Default404 />} />
       </Routes>

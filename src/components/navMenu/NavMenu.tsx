@@ -43,7 +43,7 @@ const NavMenu = (props: IProps) => {
       >
         <NavLink
           className="nav-item-link"
-          to={"/portfolio/about"}
+          to={"/portfolio/bio"}
           onClick={toggleMenu}
         >
           BIO
@@ -57,7 +57,7 @@ const NavMenu = (props: IProps) => {
       >
         <NavLink
           className="nav-item-link"
-          to={"/portfolio/work"}
+          to={"/portfolio/skills"}
           onClick={toggleMenu}
         >
           SKILLS
@@ -71,7 +71,7 @@ const NavMenu = (props: IProps) => {
       >
         <NavLink
           className="nav-item-link"
-          to={"/portfolio/portfolio"}
+          to={"/portfolio/projects"}
           onClick={toggleMenu}
         >
           PROJECTS

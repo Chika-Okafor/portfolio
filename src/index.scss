@@ -29,6 +29,33 @@ code {
   display: none;
 }
 
+.snap-parent {
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-flow: row wrap;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+}
+
+.snap-child {
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  width: 100%;
+  height: 100%;
+  padding: 5%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-flow: column nowrap;
+  scroll-snap-align: start;
+  row-gap: 30px;
+}
+
 #root {
   display: flex;
   align-items: center;

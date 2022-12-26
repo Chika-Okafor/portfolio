@@ -6,7 +6,7 @@ import "./AboutMe.scss";
 
 const AboutMe = () => {
   return (
-    <div className="about-topics-wrapper">
+    <div className="about-topics-wrapper snap-parent">
       {Topics.map((topic, index) => {
         return (
           <AboutTopic
