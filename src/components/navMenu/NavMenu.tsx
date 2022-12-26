@@ -46,7 +46,7 @@ const NavMenu = (props: IProps) => {
           to={"/portfolio/about"}
           onClick={toggleMenu}
         >
-          ABOUT
+          BIO
         </NavLink>
       </motion.span>
       <motion.span
@@ -60,7 +60,7 @@ const NavMenu = (props: IProps) => {
           to={"/portfolio/work"}
           onClick={toggleMenu}
         >
-          WORK
+          SKILLS
         </NavLink>
       </motion.span>
       <motion.span
@@ -74,7 +74,7 @@ const NavMenu = (props: IProps) => {
           to={"/portfolio/portfolio"}
           onClick={toggleMenu}
         >
-          PORTFOLIO
+          PROJECTS
         </NavLink>
       </motion.span>
       <motion.span

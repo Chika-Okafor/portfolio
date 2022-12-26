@@ -1,5 +1,4 @@
 //DEPENDENCY IMPORTS
-import { motion } from "framer-motion";
 import React from "react";
 
 //COMPONENT IMPORTS
@@ -18,7 +17,7 @@ const Hero = () => {
         DEVELOPMENT
       </div>
       <button data-testid="call-to-action" className="call-to-action">
-        explore my work
+        start here
       </button>
     </React.Fragment>
   );

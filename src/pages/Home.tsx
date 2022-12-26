@@ -14,7 +14,7 @@ const Home = () => {
         DEVELOPMENT
       </div>
       <button data-testid="call-to-action" className="call-to-action">
-        explore my work
+        start here
       </button>
     </section>
   );
