@@ -1,8 +1,6 @@
-//DEPENDENCY IMPORTS
 import { motion } from "framer-motion";
 import { ReactElement } from "react";
 
-//INTERFACE DEFINITION
 interface IProps {
   id: string;
   className?: string;
@@ -13,7 +11,6 @@ interface IProps {
 }
 
 const PageCreator = (props: IProps) => {
-  //PROPS DECONSTRUCTION
   const {
     id,
     className,
@@ -23,7 +20,6 @@ const PageCreator = (props: IProps) => {
     grandChildren,
   } = props;
 
-  //SET ANIMATION VARIANTS
   const menuVariants = {
     pullUp: { opacity: 1, y: "-100%" },
     pullDown: { opacity: 1, y: "0%" },

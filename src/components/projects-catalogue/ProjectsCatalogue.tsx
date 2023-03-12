@@ -1,4 +1,4 @@
-import { ProjectsList as Projects } from "../../utils/ProjectsList";
+import { ProjectsList as Projects } from "../../api/ProjectsList";
 import ProjectItem from "./ProjectItem";
 
 import "./ProjectsCatalogue.scss";

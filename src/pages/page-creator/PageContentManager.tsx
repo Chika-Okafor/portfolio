@@ -1,29 +1,21 @@
-//DEPENDENCY IMPORTS
 import { motion } from "framer-motion";
 import { Routes, Route } from "react-router-dom";
 import { useContext } from "react";
 
-// CONTEXT IMPORTS
-import { MenuContext } from "../contexts/MenuContext";
+import { MenuContext } from "../../contexts/MenuContext";
 
-//COMPONENT IMPORTS
-import Bio from "./Bio";
-import Skills from "./Skills";
-import Default404 from "./404";
-import Blog from "./Blog";
+import Bio from "./../Bio";
+import Skills from "./../Skills";
+import Error404 from "./../Error404";
+import Blog from "./../Blog";
+import Home from "./../Home";
+import Projects from "./../Projects";
 
-//STYLE IMPORTS
 import "./PageContentManager.scss";
-import Home from "./Home";
-// import Projects from "./Projects";
-import Projects from "./Projects";
-// import Projects from "./Projects";
 
 const PageContentManager = () => {
-  //SAVE CONTEXT STATE
   const { isMenuOpen } = useContext(MenuContext);
 
-  //SET ANIMATION VARIANTS
   const pageSlideVariants = {
     pushOut: { opacity: 1, x: "100%", delayChildren: 5 },
     pullIn: { opacity: 1, x: "0%", delayChildren: 5 },
@@ -48,7 +40,7 @@ const PageContentManager = () => {
         <Route path="/portfolio/skills" element={<Skills />} />
         <Route path="/portfolio/projects" element={<Projects />} />
         <Route path="/portfolio/blog" element={<Blog />} />
-        <Route path="/*" element={<Default404 />} />
+        <Route path="/*" element={<Error404 />} />
       </Routes>
     </motion.div>
   );

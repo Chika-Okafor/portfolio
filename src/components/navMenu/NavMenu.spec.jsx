@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import NavMenu from "../NavMenu";
+import NavMenu from "./NavMenu";
 import { BrowserRouter as Router } from "react-router-dom";
 
 describe("NavMENU", () => {

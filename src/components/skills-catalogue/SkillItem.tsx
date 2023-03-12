@@ -1,11 +1,9 @@
-//INTERFACE DEFINITIONS
 interface IProps {
   headerText: string;
   bodyText: string;
 }
 
 const SkillItem = (props: IProps) => {
-  //PROPS DECONSTRUCTION
   const { headerText, bodyText } = props;
   return (
     <div className="skill-item snap-child">

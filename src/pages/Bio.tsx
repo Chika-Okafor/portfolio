@@ -1,6 +1,5 @@
-//COMPONENT IMPORTS
 import AboutMe from "../components/about-me/AboutMe";
-import PageCreator from "./PageCreator";
+import PageCreator from "./page-creator/PageCreator";
 
 const Bio = () => {
   return (

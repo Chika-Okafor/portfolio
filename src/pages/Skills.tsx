@@ -1,6 +1,5 @@
-//COMPONENT IMPORTS
 import SkillsCatalogue from "../components/skills-catalogue/SkillsCatalogue";
-import PageCreator from "./PageCreator";
+import PageCreator from "./page-creator/PageCreator";
 
 const Skills = () => {
   return (

@@ -1,4 +1,4 @@
-import { AboutTopicsList as Topics } from "../../utils/AboutTopicsList";
+import { AboutTopicsList as Topics } from "../../api/AboutTopicsList";
 
 import AboutTopic from "./AboutTopic";
 

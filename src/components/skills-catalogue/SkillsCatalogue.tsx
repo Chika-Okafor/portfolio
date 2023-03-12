@@ -1,4 +1,4 @@
-import { SkillsList as Skills } from "../../utils/SkillsList";
+import { SkillsList as Skills } from "../../api/SkillsList";
 import SkillItem from "./SkillItem";
 
 import "./SkillsCatalogue.scss";

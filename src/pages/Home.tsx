@@ -1,17 +1,16 @@
-//DEPENDENCY IMPORTS
-import React from "react";
+import PageCreator from "./page-creator/PageCreator";
+import Hero from "../components/hero/Hero";
 
-//COMPONENT IMPORTS
-import PageCreator from "./PageCreator";
+import "./Home";
 
 const Home = () => {
   const hero = (
     <section className="hero-section">
       <div className="hero-text">
-        FOR THE <br />
-        LOVE OF <br />
-        FRONTEND <br />
-        DEVELOPMENT
+        Well, aren't you just the luckiest?
+        <br />
+        Prepare to be dazzled by my mediocre front-end development skills and
+        underwhelming design choices.
       </div>
       <button data-testid="call-to-action" className="call-to-action">
         start here
@@ -19,7 +18,7 @@ const Home = () => {
     </section>
   );
 
-  return <PageCreator id="hero" dataTestID="hero" children={hero} />;
+  return <PageCreator id="hero" dataTestID="hero" grandChildren={<Hero />} />;
 };
 
 export default Home;

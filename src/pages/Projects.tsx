@@ -1,6 +1,5 @@
-//COMPONENT IMPORTS
 import ProjectsCatalogue from "../components/projects-catalogue/ProjectsCatalogue";
-import PageCreator from "./PageCreator";
+import PageCreator from "./page-creator/PageCreator";
 
 const Projects = () => {
   return (

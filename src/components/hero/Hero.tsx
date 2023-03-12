@@ -1,25 +1,17 @@
-//DEPENDENCY IMPORTS
 import React from "react";
+import PageCreator from "../../pages/page-creator/PageCreator";
 
-//COMPONENT IMPORTS
-import PageCreator from "../../pages/PageCreator";
+import HeroText from "./HeroText";
+import HeroButton from "./HeroButton";
 
-//STYLE IMPORTS
 import "./Hero.scss";
 
-const Hero = () => {
-  const heroChildren = (
-    <React.Fragment>
-      <div className="hero-text">
-        FOR THE <br />
-        LOVE OF <br />
-        FRONTEND <br />
-        DEVELOPMENT
-      </div>
-      <button data-testid="call-to-action" className="call-to-action">
-        start here
-      </button>
-    </React.Fragment>
+const Hero = (): JSX.Element => {
+  const heroChildren: JSX.Element = (
+    <section className="hero-section">
+      <HeroText />
+      <HeroButton />
+    </section>
   );
 
   return <PageCreator id="hero" dataTestID="hero" children={heroChildren} />;
