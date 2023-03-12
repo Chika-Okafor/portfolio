@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import NavMenu from "../NavMenu";
+import NavMenu from "./NavMenu";
 import { BrowserRouter as Router } from "react-router-dom";
 
 describe("NavMENU", () => {
@@ -10,8 +10,8 @@ describe("NavMENU", () => {
       </Router>
     );
 
-    expect(screen.getByText(/ABOUT/)).toBeInTheDocument();
-    expect(screen.getByText(/WORK/)).toBeInTheDocument();
-    expect(screen.getByText(/PORTFOLIO/)).toBeInTheDocument();
+    expect(screen.getByText(/BIO/)).toBeInTheDocument();
+    expect(screen.getByText(/SKILLS/)).toBeInTheDocument();
+    expect(screen.getByText(/PROJECTS/)).toBeInTheDocument();
   });
 });

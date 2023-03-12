@@ -11,7 +11,7 @@ import "./NavMenu.scss";
 
 //INTERFACE DEFINITIONS
 interface IProps {
-  toggleMenu: any;
+  toggleMenu: () => void;
 }
 
 const NavMenu = (props: IProps) => {
@@ -43,10 +43,10 @@ const NavMenu = (props: IProps) => {
       >
         <NavLink
           className="nav-item-link"
-          to={"/portfolio/about"}
+          to={"/portfolio/bio"}
           onClick={toggleMenu}
         >
-          ABOUT
+          BIO
         </NavLink>
       </motion.span>
       <motion.span
@@ -57,10 +57,10 @@ const NavMenu = (props: IProps) => {
       >
         <NavLink
           className="nav-item-link"
-          to={"/portfolio/work"}
+          to={"/portfolio/skills"}
           onClick={toggleMenu}
         >
-          WORK
+          SKILLS
         </NavLink>
       </motion.span>
       <motion.span
@@ -71,10 +71,10 @@ const NavMenu = (props: IProps) => {
       >
         <NavLink
           className="nav-item-link"
-          to={"/portfolio/portfolio"}
+          to={"/portfolio/projects"}
           onClick={toggleMenu}
         >
-          PORTFOLIO
+          PROJECTS
         </NavLink>
       </motion.span>
       <motion.span

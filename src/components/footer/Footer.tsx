@@ -1,18 +1,10 @@
-//DEPENDENCY IMPORTS
-import { GitHub, Instagram, LinkedIn } from "@mui/icons-material";
-
-//STYLE IMPORTS
+import { currentYear } from "../../helpers/DateHelpers";
 import "./Footer.scss";
 
-const Footer = () => {
+const Footer = (): JSX.Element => {
   return (
     <footer className="App-footer">
-      <span className="socials">
-        <Instagram className="social-icon" />
-        <LinkedIn className="social-icon" />
-        <GitHub className="social-icon" />
-      </span>
-      <span className="copyright">© 2022 CHIKA OKAFOR</span>
+      <span className="copyright">© {currentYear()} CHIKA OKAFOR</span>
     </footer>
   );
 };

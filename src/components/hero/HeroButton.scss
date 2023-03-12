@@ -1,0 +1,25 @@
+@import "./../../styles/Variables.scss";
+
+.call-to-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+  font-size: 1.2rem;
+  width: 100%;
+
+  .call-to-action-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    color: $color-primary;
+    background-color: $color-secondary;
+    padding: 8px 20px;
+    font-family: "Exo 2", sans-serif;
+    font-weight: 600;
+    // border-radius: 5px;
+    // width: 30%;
+  }
+}

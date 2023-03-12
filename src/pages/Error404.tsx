@@ -1,7 +1,7 @@
 //COMPONENT IMPORTS
-import PageCreator from "./PageCreator";
+import PageCreator from "./page-creator/PageCreator";
 
-const Default404 = () => {
+const Error404 = () => {
   return (
     <PageCreator
       id="default-404"
@@ -11,4 +11,4 @@ const Default404 = () => {
   );
 };
 
-export default Default404;
+export default Error404;

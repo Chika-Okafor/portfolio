@@ -2,27 +2,20 @@ import { motion } from "framer-motion";
 import { Routes, Route } from "react-router-dom";
 import { useContext } from "react";
 
-//DEPENDENCY IMPORTS
+import { MenuContext } from "../../contexts/MenuContext";
 
-// CONTEXT IMPORTS
-import { MenuContext } from "../contexts/MenuContext";
+import Bio from "./../Bio";
+import Skills from "./../Skills";
+import Error404 from "./../Error404";
+import Blog from "./../Blog";
+import Home from "./../Home";
+import Projects from "./../Projects";
 
-//COMPONENT IMPORTS
-import About from "./About";
-import Work from "./Work";
-import Portfolio from "./Portfolio";
-import Default404 from "./404";
-import Blog from "./Blog";
-
-//STYLE IMPORTS
 import "./PageContentManager.scss";
-import Home from "./Home";
 
-const PageContentManager = () => {
-  //SAVE CONTEXT STATE
+const PageContentManager = (): JSX.Element => {
   const { isMenuOpen } = useContext(MenuContext);
 
-  //SET ANIMATION VARIANTS
   const pageSlideVariants = {
     pushOut: { opacity: 1, x: "100%", delayChildren: 5 },
     pullIn: { opacity: 1, x: "0%", delayChildren: 5 },
@@ -43,11 +36,11 @@ const PageContentManager = () => {
       <Routes>
         <Route path="/portfolio/" element={<Home />} />
         <Route path="/portfolio/home" element={<Home />} />
-        <Route path="/portfolio/about" element={<About />} />
-        <Route path={`/portfolio/work`} element={<Work />} />
-        <Route path={`/portfolio/portfolio`} element={<Portfolio />} />
+        <Route path="/portfolio/bio" element={<Bio />} />
+        <Route path="/portfolio/skills" element={<Skills />} />
+        <Route path="/portfolio/projects" element={<Projects />} />
         <Route path="/portfolio/blog" element={<Blog />} />
-        <Route path="*" element={<Default404 />} />
+        <Route path="/*" element={<Error404 />} />
       </Routes>
     </motion.div>
   );

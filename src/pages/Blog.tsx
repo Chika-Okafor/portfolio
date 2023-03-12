@@ -1,5 +1,4 @@
-//COMPONENT IMPORTS
-import PageCreator from "./PageCreator";
+import PageCreator from "./page-creator/PageCreator";
 
 const Blog = () => {
   return <PageCreator id="blog" dataTestID="blog" grandChildren="Blog" />;
