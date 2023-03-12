@@ -6,12 +6,12 @@
   align-items: center;
   justify-content: space-between;
   flex-flow: row wrap;
-  font-size: 1rem;
+  font-size: 1.5rem;
   width: 100%;
   padding: 0 5%;
   font-weight: 600;
   z-index: 10;
-  font-family: "Tilt Prism", cursive;
+  font-family: "Belleza", sans-serif;
 
   #logo {
     display: flex;
@@ -27,6 +27,6 @@
     align-items: center;
     justify-content: flex-end;
     cursor: pointer;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
   }
 }

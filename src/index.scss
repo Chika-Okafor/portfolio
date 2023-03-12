@@ -1,3 +1,5 @@
+@import "./styles/Variables.scss";
+
 * {
   padding: 0;
   margin: 0;
@@ -8,7 +10,7 @@
 // font-family: 'Dancing Script', cursive;
 // font-family: 'Exo 2', sans-serif;
 // font-family: 'Source Code Pro', monospace;
-// font-family: 'Tilt Prism', cursive;
+// font-family: 'Belleza', sans-serif; //header, footer
 
 html {
   height: 100%;
@@ -73,7 +75,7 @@ code {
   text-align: center;
   // background: url("../public/hero/HZDWP10_1440x2560.jpg");
   // background-size: cover;
-  background-color: #0d1821;
+  background-color: $color-primary;
   height: 100%;
   width: 100%;
   display: flex;
@@ -90,7 +92,7 @@ code {
   justify-content: flex-start;
   flex-flow: row wrap;
   font-size: 1rem;
-  color: #fff;
+  color: $color-light;
   width: 100%;
   position: relative;
   overflow: hidden;

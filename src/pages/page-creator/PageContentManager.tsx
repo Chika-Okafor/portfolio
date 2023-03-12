@@ -13,7 +13,7 @@ import Projects from "./../Projects";
 
 import "./PageContentManager.scss";
 
-const PageContentManager = () => {
+const PageContentManager = (): JSX.Element => {
   const { isMenuOpen } = useContext(MenuContext);
 
   const pageSlideVariants = {

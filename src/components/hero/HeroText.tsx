@@ -3,11 +3,19 @@ import "./HeroText.scss";
 const HeroText = (): JSX.Element => {
   return (
     <div className="hero-text">
-      Well, aren't you just the luckiest?
-      <br />
-      <br />
-      Prepare to be dazzled by my mediocre front-end development skills and
-      underwhelming design choices.
+      <span className="hero-text-primary">Well, hello there!</span>
+      <span className="hero-text-secondary">Aren't you just the luckiest?</span>
+      <span className="hero-text-secondary">
+        Prepare to be dazzled
+        <br />
+        by my mediocre
+        <br />
+        development skills
+        <br />
+        and underwhelming
+        <br />
+        design choices.
+      </span>
     </div>
   );
 };

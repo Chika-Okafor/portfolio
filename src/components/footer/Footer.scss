@@ -4,31 +4,15 @@
   height: 8%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-flow: row wrap;
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: #fff;
   width: 100%;
   padding: 0 5%;
   font-weight: 600;
   color: #bfcc94;
-  font-family: "Tilt Prism", cursive;
-
-  .socials {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: row nowrap;
-    column-gap: 10px;
-
-    .social-icon {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 25px;
-      height: 25px;
-    }
-  }
+  font-family: "Belleza", sans-serif;
 
   .copyright {
     display: flex;

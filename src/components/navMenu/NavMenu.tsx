@@ -11,7 +11,7 @@ import "./NavMenu.scss";
 
 //INTERFACE DEFINITIONS
 interface IProps {
-  toggleMenu: any;
+  toggleMenu: () => void;
 }
 
 const NavMenu = (props: IProps) => {

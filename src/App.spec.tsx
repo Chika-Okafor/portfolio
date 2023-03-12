@@ -1,11 +1,15 @@
 import { render, screen } from "@testing-library/react";
 import App from "./App";
 import { BrowserRouter as Router } from "react-router-dom";
+import { currentYear } from "./helpers/DateHelpers";
 
 describe("App", () => {
   const toggleMenu = jest.fn();
 
-  const MyApp = () => (
+  const mockCurrentYear: number = currentYear();
+  const mockText: string = `© ${mockCurrentYear} CHIKA OKAFOR`;
+
+  const MyApp = (): JSX.Element => (
     <Router>
       <App />
     </Router>
@@ -36,7 +40,7 @@ describe("App", () => {
   });
 
   it("renders the Footer component", () => {
-    const copyrightText = screen.getAllByText("© 2022 CHIKA OKAFOR");
+    const copyrightText = screen.getAllByText(mockText);
     expect(copyrightText.length).toBe(1);
   });
 });
