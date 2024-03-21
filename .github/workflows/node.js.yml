@@ -11,47 +11,43 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     strategy:
       matrix:
-        node-version: [14.x, 16.x, 18.x, 21x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
+        node-version: [14.x, 16.x, 18.x, 21.x] # fixed typo here: "21x" to "21.x"
     steps:
-    - name: Checkout Repository
-    - uses: actions/checkout@v3
-    
-    - name: Set up Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+      
+      - name: Set up Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+          
+      - name: Install Dependencies
+        run: npm install
         
-    - name: Install Dependencies
-      run: npm install
-      
-    - name: Run Tests and Generate Coverage Report
-      run: npm test -- --coverage
-      
-    - name: Upload Tests Coverage Report to Codecov
-      uses: codecov/codecov-action@v4.0.1
-      with:
-        token: ${{ secrets.CODECOV_TOKEN }}
-        slug: Chika-Okafor/portfolio
-      
-    - name: Build App
-      run: npm run build
-
-    - name: Deploy App
-      run: |
-        git config --global user.name $user_name
-        git config --global user.email $user_email
-        git remote set-url origin https://${github_token}@github.com/${repository}
-        npm run deploy
-      env:
-        user_name: 'github-actions[bot]'
-        user_email: 'github-actions[bot]@users.noreply.github.com'
-        github_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
-        repository: ${{ github.repository }}
+      - name: Run Tests and Generate Coverage Report
+        run: npm test -- --coverage
+        
+      - name: Upload Tests Coverage Report to Codecov
+        uses: codecov/codecov-action@v4.0.1
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          slug: Chika-Okafor/portfolio
+        
+      - name: Build App
+        run: npm run build
+  
+      - name: Deploy App
+        run: |
+          git config --global user.name $user_name
+          git config --global user.email $user_email
+          git remote set-url origin https://${github_token}@github.com/${repository}
+          npm run deploy
+        env:
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          github_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
+          repository: ${{ github.repository }}
