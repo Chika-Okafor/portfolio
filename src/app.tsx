@@ -58,7 +58,7 @@ const App = () => {
               textDecoration: "none",
             }}
           >
-            LOGO
+            Logo
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
