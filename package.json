@@ -12,7 +12,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emotion/react": "^11.11.4",
@@ -35,7 +35,6 @@
     "@types/react-dom": "^18.2.22",
     "@typescript-eslint/eslint-plugin": "^7.2.0",
     "@typescript-eslint/parser": "^7.2.0",
-    "@vitejs/plugin-react": "^4.2.1",
     "@vitejs/plugin-react-swc": "^3.5.0",
     "clsx": "^2.1.0",
     "eslint": "^8.57.0",
