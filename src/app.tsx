@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import styles from "./app.module.scss";
 
-function App() {
+const App = () => {
   return (
     <div className={styles.app}>
       <header className={styles.appHeader}>
@@ -20,6 +20,6 @@ function App() {
       </header>
     </div>
   );
-}
+};
 
 export default App;
