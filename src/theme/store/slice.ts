@@ -11,5 +11,8 @@ export const themeSlice = createSlice({
     setDarkTheme: (state) => {
       state.activeTheme = "dark";
     },
+    toggleTheme: (state) => {
+      state.activeTheme = state.activeTheme === "light" ? "dark" : "light";
+    },
   },
 });

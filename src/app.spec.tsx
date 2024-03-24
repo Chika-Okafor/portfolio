@@ -1,8 +1,9 @@
-import { render } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import App from "./app";
+import { FOOTER_COPYRIGHT_TEXT_2 } from "./modules/footer/constants";
 
-describe("App", () => {
-  it("renders", () => {
-    render(<App />);
-  });
+it("renders learn react link", () => {
+  render(<App />);
+
+  expect(screen.getByText(FOOTER_COPYRIGHT_TEXT_2)).toBeInTheDocument();
 });
