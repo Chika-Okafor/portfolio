@@ -1,4 +1,4 @@
-import { FC, ReactNode, createContext, useState } from "react";
+import { FC, ReactNode, createContext } from "react";
 import { useToggle } from "react-use";
 import { ThemeProvider as MuiThemeProvider } from "@mui/material/styles";
 import { dark } from "../modes/dark";

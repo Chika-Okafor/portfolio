@@ -1,6 +1,6 @@
 import { PaletteOptions } from "@mui/material/styles";
 import commonPallete from "../common/pallete";
-import { BLACK, DEFAULT_BLACK, DEFAULT_WHITE, WHITE } from "../../constants";
+import { BLACK, DEFAULT_BLACK, WHITE } from "../../constants";
 
 const darkThemePalette: PaletteOptions = {
   ...commonPallete,
