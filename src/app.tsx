@@ -1,24 +1,18 @@
-import logo from "./logo.svg";
-import styles from "./app.module.scss";
+import { Stack } from "@mui/material";
+import { Footer } from "./modules/footer";
+import { Header } from "./modules/header";
+import ThemeProvider from "./theme/context/theme-provider";
+import CssBaseline from "@mui/material/CssBaseline";
 
 const App = () => {
   return (
-    <div className={styles.app}>
-      <header className={styles.appHeader}>
-        <img src={logo} className={styles.appLogo} alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className={styles.appLink}
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider>
+      <CssBaseline />
+      <Stack>
+        <Header />
+        <Footer />
+      </Stack>
+    </ThemeProvider>
   );
 };
 
