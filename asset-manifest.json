@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.b76444ae.css",
-    "main.js": "/portfolio/static/js/main.0b070972.js",
+    "main.css": "/portfolio/static/css/main.d4301181.css",
+    "main.js": "/portfolio/static/js/main.0e639f2e.js",
     "static/js/453.ace21015.chunk.js": "/portfolio/static/js/453.ace21015.chunk.js",
     "static/media/logo-nowrap.png": "/portfolio/static/media/logo-nowrap.0d40ddf18de7e964c521.png",
     "index.html": "/portfolio/index.html",
-    "main.b76444ae.css.map": "/portfolio/static/css/main.b76444ae.css.map",
-    "main.0b070972.js.map": "/portfolio/static/js/main.0b070972.js.map",
+    "main.d4301181.css.map": "/portfolio/static/css/main.d4301181.css.map",
+    "main.0e639f2e.js.map": "/portfolio/static/js/main.0e639f2e.js.map",
     "453.ace21015.chunk.js.map": "/portfolio/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b76444ae.css",
-    "static/js/main.0b070972.js"
+    "static/css/main.d4301181.css",
+    "static/js/main.0e639f2e.js"
   ]
 }
