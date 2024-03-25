@@ -1,16 +1,15 @@
-.footer {
-  // border: 1px solid red;
+.contactInfoWrapper {
+  //   border: 1px solid red;
+  width: 100%;
   display: flex;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: space-between;
   flex-flow: row wrap;
-  width: 100%;
-  padding: 2rem 0 1rem;
 
-  .footerContentWrapper {
-    // border: 1px solid blue;
-    width: 100%;
-    align-items: center;
+  .contactInfoIcon {
+    // border: 1px solid red;
+    margin: 0.5rem 0;
+    font-size: 2rem;
   }
 }
 
@@ -24,24 +23,20 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .footer {
-    // border: 1px solid blue;
+  .contactInfoWrapper {
+    //   border: 1px solid red;
 
-    .footerContentWrapper {
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
+    .contactInfoIcon {
     }
   }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .footer {
-    // border: 1px solid blue;
-    padding: 2.3rem 0 1.5rem;
+  .contactInfoWrapper {
+    width: 40%;
 
-    .footerContentWrapper {
+    .contactInfoIcon {
     }
   }
 }

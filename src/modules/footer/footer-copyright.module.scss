@@ -1,32 +1,9 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
+.footerCopyrightWrapper {
   // border: 1px solid red;
-  align-items: flex-start;
-  justify-content: center;
-  flex-flow: row wrap;
   width: 100%;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
-.app-padding {
-  padding: 0 1.5rem;
-  // border: 1px solid red;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-flow: row wrap;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -39,18 +16,14 @@ code {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .app-padding {
+  .footerCopyrightWrapper {
     // border: 1px solid blue;
-    padding: 0 5rem;
+    width: fit-content;
   }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .app-padding {
-    // border: 1px solid blue;
-    padding: 0 7.5rem;
-  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */

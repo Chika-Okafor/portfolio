@@ -1,15 +1,18 @@
-import { Stack } from "@mui/material";
+import { Stack, CssBaseline } from "@mui/material";
 import { Footer } from "./modules/footer";
 import { Header } from "./modules/header";
 import ThemeProvider from "./theme/context/theme-provider";
-import CssBaseline from "@mui/material/CssBaseline";
+import { Contact } from "./modules/contact";
+
+import styles from "./app.module.scss";
 
 const App = () => {
   return (
     <ThemeProvider>
       <CssBaseline />
-      <Stack>
+      <Stack className={styles.app}>
         <Header />
+        <Contact />
         <Footer />
       </Stack>
     </ThemeProvider>

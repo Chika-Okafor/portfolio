@@ -1,7 +1,6 @@
-.footerCopyRightWrapper {
-  //   border: 1px solid blue;
+.contactForm {
+  border: 1px solid #333;
   width: 100%;
-  align-items: center;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -14,12 +13,8 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .footerCopyRightWrapper {
-    // border: 1px solid blue;
-    flex-direction: row;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
+  .contactForm {
+    width: 50%;
   }
 }
 
