@@ -1,13 +1,21 @@
-import { CardContent } from "@mui/material";
-import FooterCopyRightText from "./footer-copyright-text";
+import { Stack } from "@mui/material";
+import clsx from "clsx";
+import FooterShoutout from "./footer-shoutout";
+import FooterCopyRight from "./footer-copyright";
 
 import styles from "./footer.module.scss";
 
 const Footer = () => {
   return (
-    <CardContent className={styles.footer}>
-      <FooterCopyRightText />
-    </CardContent>
+    <Stack className={clsx(styles.footer)}>
+      <Stack
+        gap="1rem"
+        className={clsx(styles.footerContentWrapper, "app-padding")}
+      >
+        <FooterShoutout />
+        <FooterCopyRight />
+      </Stack>
+    </Stack>
   );
 };
 

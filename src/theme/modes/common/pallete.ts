@@ -3,8 +3,8 @@ import { BLACK, DEFAULT_BLACK, DEFAULT_WHITE, WHITE } from "../../constants";
 
 const commonPallete: PaletteOptions = {
   common: {
-    black: DEFAULT_BLACK,
-    white: DEFAULT_WHITE,
+    black: BLACK,
+    white: WHITE,
   }, // Partial<CommonColors>
 
   primary: {
@@ -23,7 +23,7 @@ const commonPallete: PaletteOptions = {
     light: "rgba(242, 166, 34, 0.3)",
     main: "rgba(242, 166, 34, 0.7)",
     dark: "rgba(242, 166, 34, 1)",
-    contrastText: BLACK,
+    contrastText: WHITE,
 
     // light: "rgba(75, 80, 67, 0.3)",
     // main: "rgba(75, 80, 67, 0.7)",
@@ -42,7 +42,7 @@ const commonPallete: PaletteOptions = {
     light: "rgba(236, 120, 32, 1)",
     main: "rgba(236, 120, 32, 1)",
     dark: "rgba(236, 120, 32, 1)",
-    contrastText: BLACK,
+    contrastText: DEFAULT_BLACK,
   }, // PaletteColorOptions;
 
   info: {
