@@ -12,7 +12,7 @@ const HeroUnderlay: FC<HeroUnderlayProps> = ({ animation }) => {
   return (
     <motion.div
       className={styles.heroUnderlay}
-      data-testId="hero-underlay"
+      data-testid="hero-underlay"
       style={{ opacity: 0 }}
       animate={animation}
       layout

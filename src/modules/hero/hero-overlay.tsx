@@ -15,7 +15,7 @@ const HeroOverlay: FC<HeroOverlayProps> = ({ scale, animation }) => {
   return (
     <motion.div
       className={clsx(styles.heroOverlay, "app-padding")}
-      data-testId="hero-overlay"
+      data-testid="hero-overlay"
       style={{ scale, opacity: 0 }}
       animate={animation}
       layout
