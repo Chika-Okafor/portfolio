@@ -1,10 +1,16 @@
 .contactInfoListWrapper {
-  // border: 1px solid blue;
+  //   border: 1px solid blue;
+  //   width: 150px;
 
   .contactInfoListHeader {
     // border: 1px solid red;
     padding: 0.5rem 0;
+    font-family: "Courier New", Courier, monospace;
+    font-family: "Quicksand", Courier, monospace;
   }
+
+  //header Quicksand, Lora, Literata, Roboto Serif, Albert Sans
+  //list Courier New, Barlow, Roboto Serif, Albert Sans
 
   .contactInfoList {
     // border: 1px solid red;
@@ -13,6 +19,8 @@
     .contactInfoListItem {
       //   border: 1px solid red;
       padding: 0.25rem 0;
+      font-family: "Courier New", Courier, monospace;
+      font-family: "Barlow", Courier, monospace;
     }
   }
 }

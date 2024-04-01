@@ -9,7 +9,7 @@ const CaptionText: FC<CaptionTextProps> = ({
 }) => {
   return (
     <Typography
-      variant="caption"
+      variant="body1"
       align="center"
       paragraph={paragraphEnabled}
       sx={{

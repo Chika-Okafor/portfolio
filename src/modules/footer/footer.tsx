@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <Stack className={clsx(styles.footer)}>
       <Stack
-        gap="1rem"
+        gap="0.5rem"
         className={clsx(styles.footerContentWrapper, "app-padding")}
       >
         <FooterShoutout />

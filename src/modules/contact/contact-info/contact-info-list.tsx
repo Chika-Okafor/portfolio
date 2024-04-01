@@ -11,14 +11,14 @@ export interface ContactInfoListProps {
 const ContactInfoList: FC<ContactInfoListProps> = ({ headline, list }) => {
   return (
     <Stack className={styles.contactInfoListWrapper}>
-      <Typography variant="subtitle2" className={styles.contactInfoListHeader}>
+      <Typography variant="subtitle1" className={styles.contactInfoListHeader}>
         {headline}
       </Typography>
       <Stack className={styles.contactInfoList}>
         {list.map((item) => (
           <Typography
             key={item}
-            variant="body2"
+            variant="body1"
             className={styles.contactInfoListItem}
           >
             {item}

@@ -9,7 +9,7 @@ describe("FooterCopyright", () => {
   it("renders copyright text correctly", () => {
     render(<FooterCopyright />);
 
-    expect(screen.getByText(/Chika Michael Okafor/i)).toBeInTheDocument();
+    expect(screen.getByText(/Chika Okafor/i)).toBeInTheDocument();
     expect(
       screen.getByText(FOOTER_COPYRIGHT_TEXT_SEPARATOR)
     ).toBeInTheDocument();
