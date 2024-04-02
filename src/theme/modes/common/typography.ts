@@ -1,6 +1,6 @@
 const fontFamily = [
-  "Roboto", // Default Material-UI font
-  "Arial", // Fallback font
+  "Quicksand", // Default Material-UI font
+  "Lora", // Fallback font
   // Add more font families if desired
 ].join(",");
 

@@ -1,10 +1,13 @@
 import { Components } from "@mui/material";
 
 const components: Components = {
-  MuiButton: {
+  MuiLink: {
     styleOverrides: {
       root: {
-        textTransform: "none",
+        // textDecoration: "none",
+        // cursor: "pointer",
+        // pointerEvents: "all",
+        // border: "1px solid red",
       },
     },
   },

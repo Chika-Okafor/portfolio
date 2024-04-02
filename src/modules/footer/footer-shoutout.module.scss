@@ -1,0 +1,46 @@
+.footerShoutoutWrapper {
+  // border: 1px solid red;
+  width: 100%;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-flow: row wrap;
+
+  .footerShoutoutLink {
+    color: red;
+    font-family: "Parisienne", cursive;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.3rem;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+      //   border: 1px solid red;
+    }
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .footerShoutoutWrapper {
+    // border: 1px solid blue;
+    width: fit-content;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

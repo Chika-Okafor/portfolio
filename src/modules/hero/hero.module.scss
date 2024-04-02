@@ -1,7 +1,24 @@
-.footerCopyRightWrapper {
-  //   border: 1px solid blue;
+.heroWrapper {
+  //   border: 1px solid red;
+  height: 300vh;
   width: 100%;
+  display: flex;
+  justify-content: flex-start;
   align-items: center;
+  position: relative;
+
+  .hero {
+    // border: 1px solid red;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url("../../assets/img/test1.jpg");
+    background-size: cover;
+    background-position: 0;
+  }
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -14,17 +31,18 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .footerCopyRightWrapper {
+  .heroWrapper {
     // border: 1px solid blue;
-    flex-direction: row;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
+    // height: 500vh;
   }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  .heroWrapper {
+    // border: 1px solid blue;
+    height: 500vh;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */

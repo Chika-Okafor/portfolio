@@ -1,0 +1,76 @@
+.heroOverlay {
+  //   border: 1px solid red;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafafa;
+  mix-blend-mode: screen;
+  color: black;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+
+  //header Quicksand, Lora, Literata, Roboto Serif, Albert Sans
+  //list Courier New, Barlow, Roboto Serif, Albert Sans
+
+  .heroOverlayText {
+    font-size: 3rem;
+    font-weight: 900;
+    font-family: "Yeseva One", "Arial Narrow", Arial, sans-serif;
+  }
+
+  .heroOverlayTextCenter {
+    // border: 1px solid red;
+    padding: 0 1rem;
+    color: #fafafa;
+    background-color: black;
+    mix-blend-mode: multiply;
+    text-align: center;
+
+    ::before {
+      content: "d";
+    }
+
+    span {
+      color: rgba(255, 255, 255, 0);
+    }
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .heroOverlay {
+    .heroOverlayText {
+      .heroOverlayTextCenter {
+      }
+    }
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .heroOverlay {
+    // border: 1px solid blue;
+    .heroOverlayText {
+      font-size: 5rem;
+      .heroOverlayTextCenter {
+        font-size: 5rem;
+      }
+    }
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

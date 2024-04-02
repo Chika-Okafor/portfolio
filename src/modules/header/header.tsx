@@ -9,13 +9,14 @@ import {
   MenuItem,
   Typography,
 } from "@mui/material";
-
-import logoImg from "../../assets/img/logo-nowrap.png";
-import LightSwitch from "./light-switch";
 import { MouseEvent, useContext, useState } from "react";
+import { Menu as MenuIcon } from "@mui/icons-material";
+
+import LightSwitch from "./light-switch";
 import { ThemeContext } from "../../theme/context/theme-provider";
 import { PAGES } from "./constants";
-import { Menu as MenuIcon } from "@mui/icons-material";
+
+import logoImg from "../../assets/img/logo-nowrap-1.png";
 
 const Header = () => {
   const { isDark, toggleTheme } = useContext(ThemeContext);
@@ -31,7 +32,7 @@ const Header = () => {
   };
 
   return (
-    <AppBar position="sticky">
+    <AppBar>
       <Container maxWidth="xl">
         <Toolbar>
           <Stack
