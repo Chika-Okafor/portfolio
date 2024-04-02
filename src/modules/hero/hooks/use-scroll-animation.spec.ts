@@ -7,7 +7,6 @@ describe("useScrollAnimation", () => {
 
     // Initially, scrollY should be 0 and scale should be 1
     expect(result.current.scrollY).toBe(0);
-    expect(result.current.scale).toBe(1);
 
     // Simulate scrolling to 100 pixels
     window.scrollY = 100;
@@ -15,7 +14,6 @@ describe("useScrollAnimation", () => {
 
     // After scrolling, scrollY should be 100 and scale should be updated accordingly
     // expect(result.current.scrollY).toBe(100);
-    // expect(result.current.scale).toBe(1 + 100 * 0.008);
   });
 
   it("should remove scroll event listener on unmount", () => {

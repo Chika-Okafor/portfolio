@@ -11,14 +11,14 @@ import styles from "./hero.module.scss";
 const Hero = () => {
   const ref = useRef<HTMLDivElement | null>(null);
 
-  const { scrollY, scale } = useScrollAnimation();
+  const { scrollY } = useScrollAnimation();
   const overlayAnimation = useOverlayVisibility({ ref, scrollY });
   const underlayAnimation = useUnderlayVisibility({ ref, scrollY });
 
   return (
     <Stack ref={ref} className={styles.heroWrapper}>
       <figure className={styles.hero}>
-        <HeroOverlay scale={scale} animation={overlayAnimation} />
+        <HeroOverlay scale={1 + scrollY * 0.008} animation={overlayAnimation} />
         <HeroUnderlay animation={underlayAnimation} />
       </figure>
     </Stack>
