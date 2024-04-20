@@ -4,6 +4,7 @@ import { Footer } from "./modules/footer";
 import { Header } from "./modules/header";
 import { Contact } from "./modules/contact";
 import { Hero } from "./modules/hero";
+import { About } from "./modules/about";
 
 import styles from "./app.module.scss";
 
@@ -14,6 +15,7 @@ const App = () => {
       <Stack className={styles.app}>
         <Header />
         <Hero />
+        <About />
         <Contact />
         <Footer />
       </Stack>
