@@ -28,6 +28,21 @@ code {
     monospace;
 }
 
+::-webkit-scrollbar {
+  height: 12px;
+  width: 5px;
+  background: #fafafa;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333333;
+  -webkit-border-radius: 1ex;
+}
+
+::-webkit-scrollbar-corner {
+  background: #fafafa;
+}
+
 .app-padding {
   padding: 0 1.5rem;
   // border: 1px solid red;

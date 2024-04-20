@@ -1,4 +1,3 @@
-export const FOOTER_COPYRIGHT_TEXT_1 = "Chika Okafor" as const;
 export const FOOTER_COPYRIGHT_TEXT_2 = "All Rights Reserved" as const;
 export const FOOTER_COPYRIGHT_TEXT_SEPARATOR = "|" as const;
 
